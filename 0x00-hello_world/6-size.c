@@ -3,7 +3,7 @@
  *  * main - Entry Point
  *   *
  *    * Return: 0 on success
- *     */
+**/
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
