@@ -57,9 +57,9 @@ void print_times_table(int n)
 			res = i * j;
 			if (j == 0)
 				print_spaces(0);
-			else if (res < 9)
+			else if (res <= 9)
 				print_spaces(3);
-			else if (res < 99)
+			else if (res <= 99)
 				print_spaces(2);
 			else
 				print_spaces(1);
