@@ -1,5 +1,23 @@
 #include "main.h"
 
+
+/**
+ *_strlen - return the length of a string literal
+ *@s: string literal
+ *
+ *Return: int
+ */
+
+int _strlen(char *s)
+{
+	int len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
+}
+
 /**
  * puts_half - print second half of a string
  *  If odd number of chars, print (length - 1) / 2
