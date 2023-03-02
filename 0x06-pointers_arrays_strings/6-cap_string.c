@@ -48,7 +48,7 @@ char *cap_string(char *s)
 				 s[i] == '?' || s[i] == '"' || s[i] == '(' || s[i] == ')' ||
 				 s[i] == '{' || s[i] == '}')
 			isStarter = 1;
-		else if(isStarter && !_isAlpha(s[i]))
+		else if (isStarter && !_isAlpha(s[i]))
 			isStarter = 0;
 	}
 	return (s);
