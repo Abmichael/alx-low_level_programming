@@ -7,7 +7,7 @@
 
 char *leet(char *src)
 {
-	int i,j;
+	int i, j;
 	char leet[] = "aAeEoOtTlL";
 	char replace[] = "4433007711";
 
