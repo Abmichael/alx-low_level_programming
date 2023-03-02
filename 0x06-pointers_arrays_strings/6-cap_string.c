@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * string_toupper - changes all lowercase letters of a string to uppercase
+ * _toupper - changes all lowercase letters of a string to uppercase
  * @src: source string
- * Return: char*
+ * Return: char
  */
 
 char _toupper(char src)
