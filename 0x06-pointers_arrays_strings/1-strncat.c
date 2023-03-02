@@ -1,12 +1,14 @@
 #include "main.h"
 /**
- *_strcat - concatenates two strings
+ *_strncat - concatenates two strings up to n
  *@dest: string literal to append to
  *@src: string literal to append from
+ *@n: upper limit
  *Return: char *
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
+
 {
 	int i, j;
 
@@ -15,12 +17,13 @@ char *_strcat(char *dest, char *src)
 		i++;
 
 	j = 0;
-	while (src[j])
+	while (j < n && src[j])
 	{
 		dest[i] = src[j];
 		j++;
 		i++;
 	}
+
 	dest[i] = '\0';
 
 	return (dest);
