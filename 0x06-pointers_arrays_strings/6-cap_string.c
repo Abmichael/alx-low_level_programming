@@ -25,7 +25,7 @@ char *string_toupper(char *src)
  * @c: source char
  * Return: int
  */
-int isalpha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
@@ -45,7 +45,7 @@ char *cap_string(char *s)
 
 	for (int i = 0; s[i] != '\0'; i++)
 	{
-		if (isStarter && isalpha(s[i]))
+		if (isStarter && _isalpha(s[i]))
 		{
 			s[i] = string_toupper(s[i]);
 			isStarter = 0;
