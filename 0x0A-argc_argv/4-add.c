@@ -9,11 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int i, sum = 0;
 
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		char *endptr;
+
 		int num = strtol(argv[i], &endptr, 10);
 
 		if (*endptr != '\0' || num < 0)
